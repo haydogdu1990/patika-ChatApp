@@ -5,7 +5,7 @@ let socket;
 export const init = () => {
   console.log("Connecting...");
 
-  socket = io("http://localhost:8000", {
+  socket = io("https://patika-chat-app-mu.vercel.app:8000", {
     transports: ["websocket"],
   });
 
