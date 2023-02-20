@@ -1,11 +1,11 @@
 .chatlist {
-  border: solid 1px #ddd;
   padding: 10px;
   height: 400px;
   width: 100%;
   margin: 40px auto 0 auto;
-  background-color: cornsilk;
+  background-color: #0b141a;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .chatlist > div {
@@ -16,18 +16,22 @@
 }
 
 .textInput {
-  border: solid 1px #ddd;
+  border: solid 1px #202c33;
   padding: 10px;
   width: 100%;
   font-size: 16px;
+  background-color: #202c33;
+  color: white;
+  border-radius: 10px;
 }
 
 .chatItem {
-  font-size: 18px;
-  color: #333;
+  font-size: 16px;
+  color: white;
   border-radius: 8px;
-  background: #fff;
-  padding: 12px 18px;
+  background: #202c33;
+  padding: 10px 18px;
+  font-family: "Segoe UI", Helverica, Tahoma, Geneva, Verdana, sans-serif;
   border: 0.5px solid rgba(0, 0, 0, 0.02);
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.08);
   max-width: 70%;
@@ -40,4 +44,27 @@
 .chatItem.right {
   margin-right: 0;
   margin-left: auto;
+  background: #005c4b;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
