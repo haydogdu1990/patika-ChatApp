@@ -1,17 +1,18 @@
 .chatlist {
-  padding: 10px;
-  height: 400px;
+  padding: 0 10px 0 10px;
+  height: 450px;
   width: 100%;
   margin: 40px auto 0 auto;
   background-color: #0b141a;
   overflow: hidden;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .chatlist > div {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 100%;
   overflow: auto;
 }
 
@@ -23,6 +24,7 @@
   background-color: #202c33;
   color: white;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .chatItem {
@@ -67,4 +69,15 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .chatlist {
+    margin: 0;
+    height: 94vh;
+  }
+  .textInput {
+    height: 6vh;
+  }
 }
