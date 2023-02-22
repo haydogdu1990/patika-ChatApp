@@ -1,4 +1,21 @@
 .App {
-  width: 600px;
+  width: 720px;
   margin: 0 auto;
+}
+body {
+  background-color: #2a3942;
+}
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .App {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .App {
+    width: 100%;
+    margin: 0;
+  }
 }
